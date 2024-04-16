@@ -29,6 +29,8 @@ source ~/.bashrc
 echo "Configuración de Pyenv en el perfil de Bash COMPLETADO"
 sleep 5s
 echo "Instalación Python 3.9.16"
+echo "Version pyenv"
+sudo /root/.pyenv/bin/pyenv --version
 PYTHON_CONFIGURE_OPTS="--enable-loadable-sqlite-extensions" /root/.pyenv/bin/pyenv install 3.9.16
 echo "Python 3.9.16 INSTALADO"
 sleep 5s
