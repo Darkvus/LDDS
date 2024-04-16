@@ -1,14 +1,18 @@
 #!/bin/bash
 echo "Actualización de paquetes"
+apt-get update && apt-get -y install sudo
 echo "Instalación de dependencias"
-apt-get install -y wget gpg git
+apt-get install -y wget gpgç
+apt-get install -y git
 echo "Instalación GDAL"
-apt-get install -y gdal-bin libgdal-dev install libspatialite7                                                                                                                          
+sudo apt-get install -y gdal-bin libgdal-dev install libspatialite7                                                                                                                          
 echo "GDAL INSTALADO"
 sleep 1
-echo "Instalación GitHub CLI"
-wget https://github.com/cli/cli/releases/download/v2.45.0/gh_2.45.0_linux_386.deb 
-dpkg -i gh_2.45.0_linux_386.deb
+echo "Instalación GitHub CLI" mkdir -p -m 755 /etc/apt/keyrings && wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
+&& chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+&& apt update \
+&& apt install gh -y
 echo "GitHub CLI INSTALADO"
 echo "Instalación Pyenv"
 apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
