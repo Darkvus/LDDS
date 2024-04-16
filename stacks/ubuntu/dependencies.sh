@@ -7,7 +7,7 @@ apt-get install -y gpg
 apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 apt-get install -y git
 echo "-----Instalación GDAL-----"
-sudo apt-get install -y gdal-bin libgdal-dev install libspatialite7                                                                                                                          
+apt-get install -y gdal-bin libgdal-dev install libspatialite7                                                                                                                          
 echo "GDAL INSTALADO"
 sleep 1
 echo "Instalación GitHub CLI" mkdir -p -m 755 /etc/apt/keyrings && wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
