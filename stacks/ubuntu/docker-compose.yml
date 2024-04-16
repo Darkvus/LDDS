@@ -7,5 +7,7 @@ services:
     volumes:
       - ./dependencies.sh:/install.sh
     command:
-      - /bin/bash -c "ls -la / && ls -la /install.sh" 
-      - /bin/bash -c "chmod +x /install.sh && /install.sh"
+      - /bin/sh
+      - c
+      - |
+        ls -la
