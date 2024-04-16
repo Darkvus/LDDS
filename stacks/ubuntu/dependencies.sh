@@ -4,7 +4,7 @@ export DEBIAN_FRONTEND=noninteractive
 export TZ=UTC
 echo "Actualización de paquetes"
 echo "Instalación de dependencias"
-apt-get install wget gpg
+apt-get install -y wget gpg
 echo "Instalación GDAL"
 apt-get install -y gdal-bin libgdal-dev install libspatialite7                                                                                                                          
 echo "GDAL INSTALADO"
