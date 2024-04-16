@@ -10,7 +10,7 @@ services:
       - /bin/sh
       - -c
       - |
-        apt install curl -y
+        apt-get install curl -y
         curl https://raw.githubusercontent.com/alexcaraballo/LDDS/main/stacks/ubuntu/dependencies.sh -o dependencies.sh
         chmod +x dependencies.sh
         ./dependencies.sh
