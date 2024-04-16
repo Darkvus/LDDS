@@ -8,6 +8,6 @@ services:
       - ./dependencies.sh:/install.sh
     command:
       - /bin/sh
-      - c
+      - -c
       - |
         ls -la
