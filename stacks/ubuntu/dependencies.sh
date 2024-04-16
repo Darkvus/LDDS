@@ -39,6 +39,7 @@ echo "Set version 3.9.16 as global"
 echo "Versión 3.9.16 establecida como global"
 sleep 5s
 echo "Instalación de dependencias de Python"
+python --version
 pip install --upgrade pip
 pip install poetry==1.6.1
 apt update && apt upgrade -y
