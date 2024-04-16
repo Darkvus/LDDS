@@ -2,7 +2,7 @@
 echo "Actualización de paquetes"
 apt-get update && apt-get -y install sudo
 echo "Instalación de dependencias"
-apt-get install -y wget gpgç
+apt-get install -y wget gpg
 apt-get install -y git
 echo "Instalación GDAL"
 sudo apt-get install -y gdal-bin libgdal-dev install libspatialite7                                                                                                                          
