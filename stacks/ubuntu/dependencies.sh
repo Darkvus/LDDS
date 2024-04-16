@@ -21,7 +21,7 @@ apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libread
 curl https://pyenv.run | bash
 echo "Pyenv INSTALADO"
 echo "Configuración de Pyenv en el perfil de Bash"
-echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="/root/.pyenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
@@ -29,11 +29,11 @@ source ~/.bashrc
 echo "Configuración de Pyenv en el perfil de Bash COMPLETADO"
 sleep 5s
 echo "Instalación Python 3.9.16"
-PYTHON_CONFIGURE_OPTS="--enable-loadable-sqlite-extensions" pyenv install 3.9.16
+PYTHON_CONFIGURE_OPTS="--enable-loadable-sqlite-extensions" /root/.pyenv/bin/pyenv install 3.9.16
 echo "Python 3.9.16 INSTALADO"
 sleep 5s
 echo "Set version 3.9.16 as global"
-pyenv global 3.9.16
+/root/.pyenv/bin/pyenv global 3.9.16
 echo "Versión 3.9.16 establecida como global"
 sleep 5s
 echo "Instalación de dependencias de Python"
