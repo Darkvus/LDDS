@@ -1,17 +1,17 @@
 #!/bin/bash
 
 echo "Instalación de dependencias"
-sudo apt-get install wget gpg
+apt-get install wget gpg
 echo "Instalación GDAL"
-sudo apt-get install -y gdal-bin libgdal-dev install libspatialite7                                                                                                                          
+apt-get install -y gdal-bin libgdal-dev install libspatialite7                                                                                                                          
 echo "GDAL INSTALADO"
 sleep 1
 echo "Instalación GitHub CLI"
 wget https://github.com/cli/cli/releases/download/v2.45.0/gh_2.45.0_linux_386.deb 
-sudo dpkg -i gh_2.45.0_linux_386.deb
+dpkg -i gh_2.45.0_linux_386.deb
 echo "GitHub CLI INSTALADO"
 echo "Instalación Pyenv"
-sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 curl https://pyenv.run | bash
 echo "Pyenv INSTALADO"
  echo "Configuración de Pyenv en el perfil de Bash"
