@@ -5,10 +5,12 @@ services:
     image: ubuntu:latest
     container_name: ubuntu_container
     volumes:
-      - ./dependencies.sh:/install.sh
+      - ./:/install.sh
     command:
       - /bin/sh
       - -c
       - |
-        ls -la
-        ls -la install.sh
+        apt install wget -y
+        wget https://raw.githubusercontent.com/alexcaraballo/LDDS/main/stacks/ubuntu/dependencies.sh
+        chmod +x dependencies.sh
+        ./dependencies.sh
