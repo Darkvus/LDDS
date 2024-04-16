@@ -1,0 +1,17 @@
+{
+    "version": "2",
+    "templates": [
+      {
+        "title": "Ubuntu Stack",
+        "description": "Stack de ejemplo con Ubuntu",
+        "categories": ["Ubuntu"],
+        "platform": "docker-compose",
+        "logo": "https://url/a/logo.png",
+        "note": "Image for running Microservices",
+        "repository": {
+          "url": "https://github.com/alexcaraballo/LDDS/stacks/ubuntu/docker-compose.yml",
+          "stackfile": "docker-compose.yml"
+        }
+      }
+    ]
+  }
