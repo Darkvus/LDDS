@@ -3,10 +3,10 @@
     "templates": [
       {
         "title": "Ubuntu Stack",
-        "description": "Stack de ejemplo con Ubuntu",
+        "description": "Stack for deploy Microservices",
         "categories": ["Ubuntu"],
         "platform": "docker-compose",
-        "logo": "https://url/a/logo.png",
+        "logo": "https://celering.com/wp-content/uploads/2024/02/Celering_LogoVerde_claim-300x97.png",
         "note": "Image for running Microservices",
         "repository": {
           "url": "https://github.com/alexcaraballo/LDDS/stacks/ubuntu/docker-compose.yml",
