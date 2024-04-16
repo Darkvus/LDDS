@@ -4,8 +4,9 @@ services:
   ubuntu_container:
     image: ubuntu:latest
     container_name: ubuntu_container
-    volumes:
-      - ./:/install.sh
+    environment:
+      - TZ=UTC
+      - DEBIAN_FRONTEND=noninteractive
     command:
       - /bin/bash
       - -c

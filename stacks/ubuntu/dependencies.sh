@@ -1,7 +1,4 @@
 #!/bin/bash
-echo "Set global variables"
-export DEBIAN_FRONTEND=noninteractive
-export TZ=UTC
 echo "Actualización de paquetes"
 echo "Instalación de dependencias"
 apt-get install -y wget gpg
