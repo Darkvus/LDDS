@@ -7,7 +7,7 @@ services:
     volumes:
       - ./:/install.sh
     command:
-      - /bin/sh
+      - /bin/bash
       - -c
       - |
         apt-get update
