@@ -2,7 +2,7 @@
     "version": "2",
     "templates": [
       {
-        "title": "Ubuntu Stack",
+        "title": "ubuntu-stack",
         "description": "Stack for deploy Microservices",
         "categories": ["Ubuntu"],
         "platform": "docker-compose",

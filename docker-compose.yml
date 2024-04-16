@@ -10,8 +10,10 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
-    env_file:
-      - portainer.env
+    environment:
+      - TZ=Europe/Madrid
+      - TEMPLATE_AGENT=1
+      - TEMPLATE_TEMPLATES=https://raw.githubusercontent.com/alexcaraballo/LDDS/main/templates.json
 
 volumes:
   portainer_data:
