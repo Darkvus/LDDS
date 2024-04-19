@@ -2,17 +2,12 @@ version: '3.8'
 
 services:
   ubuntu_container:
-    image: ubuntu:latest
-    container_name: ubuntu_container
+    image: darkvus/ubuntu-ssh:latest
+    container_name: ${CONTAINER_NAME}
     environment:
       - TZ=UTC
       - DEBIAN_FRONTEND=noninteractive
-    command:
-      - /bin/bash
-      - -c
-      - |
-        apt-get update
-        apt-get install curl -y
-        curl https://raw.githubusercontent.com/alexcaraballo/LDDS/main/stacks/ubuntu/dependencies.sh -o dependencies.sh
-        chmod +x dependencies.sh
-        ./dependencies.sh
+    command: tail -f /dev/null
+    ports:
+      - "8000:8000"
+    restart: always
